@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Filter</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f700;
+            color: #333;
+            width: 250px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: Black;
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:active {
+            background-color: #388e3c;
+        }
+
+        .status {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .status.enabled {
+            color: #4CAF50;
+        }
+
+        .status.disabled {
+            color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <h3>Ai Filter</h3>
+    <button id="toggleExtension">Disable Extension</button>
+    <p class="status enabled" id="statusText">Extension Active</p>
+
+    <script src="popup.js"></script>
+</body>
+</html>

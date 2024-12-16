@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Google Ai Search Filter",
+    "version": "1.0",
+    "description": "Automatically filters Ai stuff from your google searches",
+    "permissions": ["scripting", "activeTab", "webNavigation", "storage"],
+    "host_permissions": ["https://www.google.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_title": "AI Filter",
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    },
+    "icons":{
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+  }
